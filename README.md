@@ -1,2 +1,4 @@
-# tic-tac-toe
-A simple two player 3x3 'Tic-Tac-Toe' or 'X and O' game with Python using the pyDame module
+# About the Project
+* This is the classic two player Tic-Tac-Toe game, popularly known as X and O
+* The game has been developed in Python, using the pyGame module
+
