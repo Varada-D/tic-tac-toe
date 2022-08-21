@@ -21,16 +21,20 @@ pg.display.set_caption('Tic-Tac-Toe') # set window title
 def initGame():
     global turn, statusMatrix, gameOver, quitted, winner # global variables
     gameWindow.fill(BLACK) # paint window to have a black background
+    
     ''' Draw the 3x3 matrix for Tic-Tac-Toe '''
     pg.draw.line(gameWindow, WHITE, (300, 150), (300, 600), 3) # vertical line (left)
     pg.draw.line(gameWindow, WHITE, (450, 150), (450, 600), 3) # vertical line (right)
     pg.draw.line(gameWindow, WHITE, (150, 300), (600, 300), 3) # horizontal line (top)
     pg.draw.line(gameWindow, WHITE, (150, 450), (600, 450), 3) # horizontal line (bottom)
+    
     ''' Display the title "TIC-TAC-TOE" within the game window screen '''
     FONT = pg.font.SysFont(None, 75, bold=True) # set font styles
     text = FONT.render("TIC-TAC-TOE", True, RED) # set text and font color
     gameWindow.blit(text, [200,50]) # set font on the game window
     pg.display.update() # update the game window with the changes
+    
+    ''' Initial Game State '''
     turn = 'O' # initially, it is O's turn
     statusMatrix = [['','',''], ['','',''],['','','']] # a matrix to keep track of the filled positions
     gameOver = False # to check if game is over - X wins, O wins, or no one wins but all positions are filled
