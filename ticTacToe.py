@@ -3,7 +3,7 @@ import sys
 
 pg.init() # initialize pyGame
 
-'''initialize rgb values for different colours'''
+''' Initialize rgb values for different colours '''
 WHITE = (255,255,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
